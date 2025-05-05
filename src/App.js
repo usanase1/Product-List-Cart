@@ -1,11 +1,13 @@
 import ProductList from "./components/ProductList";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
-  
   return (
-    <div>
-      <ProductList />
-    </div>
+    <CartProvider>
+      <div>
+        <ProductList />
+      </div>
+    </CartProvider>
   );
 }
 
